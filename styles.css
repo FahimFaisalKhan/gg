@@ -1,0 +1,202 @@
+body, ul, li, h1, h2, a{
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+  }
+  header{
+      width: 100%;
+      background-color: brown;
+      text-align: center;
+      position: fixed;
+      z-index: 2;
+      
+      top: 0;
+      left: 0;
+      padding: 10px 0;
+
+  }
+  h1{
+      font-size: 80px;
+      color: burlywood;
+      border: burlywood 10px solid;
+      display: inline-block;
+      border-radius: 46px;
+      padding: 5px;
+  }
+  .first{
+      position: relative;
+
+  }
+  .first img{
+      max-width: 100%;
+      
+      
+  }
+  .first .welcome{
+      position: absolute;
+      top: 30%;
+      left: 0px;
+      color: cornsilk;
+      font-size: 35px;
+      padding: 30px;
+      background: darkkhaki;
+  }
+  .first .welcome span{
+      font-size: 1.7em;
+  }
+  nav{
+      background-color: darkseagreen;
+      position: sticky;
+      top: 120px;
+      padding: 20px;
+      
+      z-index: 1;
+     
+      
+      
+  }
+  nav ul{
+    max-width: 1200px;
+    white-space: nowrap;
+    margin: 0px auto;
+    text-align: center;
+
+
+  }
+  nav li{
+      display: inline-block;
+      text-decoration: none;
+      width: 33%;
+      font-size: 30px;
+      color: deeppink;
+  }
+  nav li a{
+      color: gold;
+      text-decoration: none;
+  }
+  nav li a:hover{
+      color: red;
+
+  }
+  main{
+      max-width: 100%;
+      width: 1200px;
+      margin: 80px auto;
+      
+      padding: 0px 40px;
+      box-sizing: border-box;
+  }
+ article h2{
+     color: saddlebrown;
+     font-size: 40px;
+ }
+ article p{
+     line-height: 2em;
+     color: tomato;
+ }
+ .pictures{
+     text-align: center;
+     margin: 80px 0px;
+     white-space: nowrap;
+
+ }
+ .pictures li{
+     display: inline-block;
+     width: 40%;
+     margin: 20px 5%;
+
+ }
+ .pictures li img{
+     max-width: 100%;
+ }
+ .join1{
+     background: #4b4b4b;
+     text-align: center;
+     
+     
+ }
+ .join1 h2{
+     color: #F4F4F4;
+     font-size: 40px;
+ }
+ form input{
+     margin: 20px 0;
+     padding: 10px 20px;
+     border-radius: 28px;
+     border: white 4px solid;
+ }
+  nav li.join:hover{
+     text-decoration: underline;
+  }
+  .pictures li:hover{
+      position: relative;
+      top: -4px;
+  }
+   form input:focus{
+       border: black 4px dashed;
+       outline: none;
+   }
+
+   form input:valid{
+       border: green 4px solid;
+   }
+   article p::first-line{
+       font-weight: bold;
+       font-size: 1.5em;
+   }
+   .join1 p::first-letter{
+       font-size: 1.5em;
+   }
+   p::selection{
+       background-color: indigo;
+       color: white;
+   }
+   h1::selection{
+    background-color: indigo;
+    color: white;
+   }
+   @media screen and (max-width:1130px) {
+       .first .welcome{
+           font-size: 28px;
+       }
+   }
+   @media screen and (max-width:800px){
+       .first .welcome{
+           font-size: 15px;
+           position: relative;
+           
+           color: black;
+           text-align: center;
+       }
+       .first .welcome br{
+           display: none;
+       }
+       .first .welcome span{
+           font-size: 1em;
+       }
+      .pictures li{
+          width: 100%;
+          display: block;
+          margin: 12px auto;
+      }
+   }
+   @media screen and (max-width:660px){
+       header{
+           position: static;
+       }
+       header h1{
+           font-size: 40px;
+           text-align: center;
+       }
+       nav{
+        position: relative;
+        top: 0;
+    }
+    nav li{
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+        font-size: 18px;
+    }
+  
+   }
